@@ -1,0 +1,45 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#define MAX 16
+
+int main() {
+
+	int compteur = 0;
+
+	int valeur_n;
+	int valeur_pos;
+
+	int somme;
+
+	int valeur_temp;
+
+	do {
+
+		printf("InsC)rez une valeur entre 1 et 10 : \n");
+		scanf(" %d", &valeur_temp );
+		compteur = compteur + 1;
+
+		if(valeur_temp < 0) {
+			valeur_n = valeur_n + valeur_n;
+		} else if (valeur_temp > 0) {
+			valeur_pos = valeur_pos + valeur_temp;
+		}
+
+		somme = somme + valeur_temp;
+
+
+	} while(compteur < MAX);
+
+	printf(" %d", somme);
+
+
+
+	return 0;
+}
