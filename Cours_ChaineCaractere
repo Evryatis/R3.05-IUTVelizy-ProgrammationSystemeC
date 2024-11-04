@@ -1,0 +1,23 @@
+Chaîne de caractère 
+
+Un tableau de caractère peut-être manipulé comme un caractère!
+
+=> Pas de type!
+=> Utiliser un tableau de caractères!
+
+
+char mot[100] = "bon"; //={'b','o','n''\0'}
+
+= ['b']['o']['n']
+
+\0 = fin de chaine, pour signifier que la suite n'est pas ASCII
+
+mot = mot[0]
+C'est déjà une addresse.
+
+printf(" %s", mot);
+scanf(" %s", mot);
+
+mot 1 = mot 2, XXXXXX FAUX FAUX FAUX XXXXXXX
+
+Il faut toujours faire un while pour arriver a copier chaque element de la liste de charactère pour recreer la chaine de char!
