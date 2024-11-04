@@ -1,0 +1,49 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#define TMAX 10
+
+int main(){
+    
+    int taille;
+    
+    do {
+    
+        printf("Insérez une valeur entre 1 et 10, pour la taille du tableau : \n");
+        taille = (int)taille;
+        scanf(" %d", &taille);
+        
+        if(taille < 1 || taille > TMAX){
+            printf("Taille invalide! Recommencez.. \n");
+        };
+        
+        } while (taille < 1 || taille > 10);
+    int tableau[taille];
+    int index = 0;
+     
+    do {
+        printf("Veuillez insérer un chiffre entre 2 et 10: \n");
+        scanf(" %d", &tableau[index]);
+        index = index + 1;
+    } while (index < taille);
+    
+    int verificateur = tableau[0];
+
+    for(int i=0; i < taille; i++){
+        if(verificateur > tableau[i]){
+            verificateur = tableau[i];
+        }
+    }
+    
+    printf("Minimum:");
+    printf(" %d", verificateur);
+    
+
+    return 0;
+}
